@@ -12,7 +12,25 @@
 
 <body>
     @include('partials.header')
+    <main>
+        <div class="content_div">
+            <div class="jumbo_container">
+            </div>
+            <div class="currentseries_container">
+                <div class="series_container">
+                    <div>
+                        <h2 class="series_header">CURRENT SERIES</h2>
+                    </div>
+                    <div class="series_cards_container">
 
+                    </div>
+                </div>
+                <div class="load_more_button">
+                    <button>LOAD MORE</button>
+                </div>
+            </div>
+        </div>
+    </main>
     @include('partials.footer')
 </body>
 
