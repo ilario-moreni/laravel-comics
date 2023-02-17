@@ -22,7 +22,16 @@
                         <h2 class="series_header">CURRENT SERIES</h2>
                     </div>
                     <div class="series_cards_container">
-
+                        <div class="container">
+                            <div class="row row-cols-6">
+                                @foreach($comics as $key=>$comic)
+                                <div class="col my_card">
+                                    <img class="card_image" src="{{$comic['thumb']}}" alt="">
+                                    <p class="series_name">{{ $comic['title'] }}</p>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="load_more_button">
