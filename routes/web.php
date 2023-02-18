@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('partials.current_series', compact('comics'));
 });
 
-Route::get('/single', function () {
+Route::get('/single/{id}', function ($id) {
     $comics = config('comics');
-    return view('partials.single', compact('comics'));
+    foreach($comics as $key => $comic){
+    
+        if($id == $key){
+            return $comic = $comics[$id];
+        }
+    };
+    return view('partials.single', compact('comics','comic'));
 })->name('single');

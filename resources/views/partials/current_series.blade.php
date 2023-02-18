@@ -11,10 +11,12 @@
                         <div class="container">
                             <div class="row row-cols-6">
                                 @foreach($comics as $key=>$comic)
-                                <div class="col my_card">
-                                    <img class="card_image" src="{{$comic['thumb']}}" alt="">
-                                    <p class="series_name">{{ $comic['title'] }}</p>
-                                </div>
+                                <a href="{{ route('single', ['id' => $key])}}">
+                                    <div class="col my_card">
+                                        <img class="card_image" src="{{$comic['thumb']}}" alt="">
+                                        <p class="series_name">{{ $comic['title'] }}</p>
+                                    </div>
+                                </a>
                                 @endforeach
                             </div>
                         </div>
