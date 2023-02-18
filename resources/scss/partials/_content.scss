@@ -108,4 +108,37 @@ main {
         align-items: center;
     }
 
+
+    /* single comic scss */
+
+
+    .comic_top_container {
+        position: relative;
+
+        .comic_cover {
+            position: absolute;
+            bottom: 30px;
+        }
+
+    }
+
+    .comic_description_container {
+        h2 {
+            color: $darkblue;
+        }
+
+        /* .buy_comic {
+            background-color: #55BA59;
+        } */
+
+        .adv_container {
+            position: relative;
+
+            .adv_img {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
 }
