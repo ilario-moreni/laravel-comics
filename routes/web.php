@@ -20,11 +20,13 @@ Route::get('/', function () {
 
 Route::get('/single/{id}', function ($id) {
     $comics = config('comics');
-    foreach($comics as $key => $comic){
+    $comic = '';
+    foreach($comics as $key => $item){
     
         if($id == $key){
-            return $comic = $comics[$id];
+            $comic = $item;
         }
     };
+    
     return view('partials.single', compact('comics','comic'));
 })->name('single');
