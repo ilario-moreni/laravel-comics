@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
     <footer>
-        <div class="top_footer_container">
-            <div class="main_container">
-                <ul class="shop_ul">
-                    <li class="shop_li_label">
-                        <img class="shop_icon" src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}"
-                            alt="">
-                        <span>
-                            DIGITAL COMICS
-                        </span>
-                    </li>
-                    <li class="shop_li_label">
-                        <img class="shop_icon" src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}"
-                            alt="">
-                        <span>
-                            DC MERCHANDISE
-                        </span>
-                    </li>
-                    <li class="shop_li_label">
-                        <img class="shop_icon" src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}"
-                            alt="">
-                        <span>
-                            SUBSCRIPTION
-                        </span>
-                    </li>
-                    <li class="shop_li_label">
-                        <img class="shop_icon" src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}"
-                            alt="">
-                        <span>
-                            COMIC SHOP LOCATOR
-                        </span>
-                    </li>
-                    <li class="shop_li_label">
-                        <img class="shop_icon" src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
-                        <span>
-                            DC POWER VISA
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="features_container" style="background-image: url({{Vite::asset('resources/img/footer-bg.jpg')}})">
+        <div class="features_container" style="">
             <div class="main_container features_lists_container">
                 <div>
                     <ul class="features_ul">
@@ -177,6 +126,3 @@
             </div>
         </div>
     </footer>
-</body>
-
-</html>

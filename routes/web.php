@@ -15,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('index', compact('comics'));
+    return view('partials.current_series', compact('comics'));
 });
+
+Route::get('/single', function () {
+    $comics = config('comics');
+    return view('partials.single', compact('comics'));
+})->name('single');

@@ -80,4 +80,32 @@ main {
             }
         }
     }
+
+    /* footer part */
+
+    .top_footer_container {
+        background-color: $lightblue;
+        padding: 2rem;
+    }
+
+    .shop_ul {
+        @include mixin.flat_ul;
+        @include mixin.ul_style_none;
+        @include mixin.my_li;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .shop_icon {
+        height: 60px;
+        width: 60px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+
+    .shop_li_label {
+        display: flex;
+        align-items: center;
+    }
+
 }
