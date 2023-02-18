@@ -141,4 +141,53 @@ main {
         }
     }
 
+    .comic_detail_container {
+
+        h4,
+        span {
+            color: $darkblue;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $lightblue;
+        }
+
+        .merch_icon_1 {
+            width: 34px;
+            height: 37px;
+            object-fit: none;
+            object-position: top left;
+            transform: scale(1.5);
+        }
+
+        .merch_icon_2 {
+            width: 38px;
+            height: 37px;
+            object-fit: none;
+            object-position: top right;
+            transform: scale(1.5);
+        }
+
+        .merch_icon_1 {
+            width: 34px;
+            height: 37px;
+            object-fit: none;
+            object-position: top left;
+            transform: scale(1.5);
+        }
+
+        .merch_icon_1 {
+            width: 34px;
+            height: 37px;
+            object-fit: none;
+            object-position: top left;
+            transform: scale(1.5);
+        }
+    }
+
 }
